@@ -1,0 +1,289 @@
+/* MINIMAL ELEGANT CHECKOUT PAGE - Clean & Professional */
+
+/* Checkout page container */
+.checkout-page {
+    min-height: 80vh;
+    padding: 60px 40px;
+    background-color: #fafafa;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Page heading */
+.checkout-page h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 40px;
+    letter-spacing: -0.5px;
+    text-align: center;
+}
+
+/* Success message */
+.checkout-page .success {
+    background: #e6f4ed;
+    color: #0a7e3e;
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    border: 1px solid #b7e4ca;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Shop more button */
+.shop-more {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 14px 40px;
+    background: #1a1a1a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.shop-more:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkout items grid */
+.checkout-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+/* Individual checkout item */
+.checkout-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.checkout-item h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0;
+}
+
+.checkout-item p {
+    color: #666;
+    font-size: 15px;
+    margin: 0;
+}
+
+.checkout-item p:last-child {
+    font-weight: 600;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+/* Checkout summary section */
+.checkout-summary {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 35px 40px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.checkout-summary h3 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+    letter-spacing: -0.5px;
+}
+
+.checkout-summary form {
+    margin: 0;
+}
+
+/* Confirm purchase button */
+.checkout-btn,
+.checkout-summary button {
+    width: 100%;
+    padding: 18px 40px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.checkout-btn:hover,
+.checkout-summary button:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.checkout-btn:active,
+.checkout-summary button:active {
+    transform: translateY(0);
+}
+
+/* Empty cart message */
+.checkout-page .empty {
+    text-align: center;
+    padding: 80px 20px;
+    color: #666;
+    font-size: 18px;
+}
+
+.checkout-page .empty a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    border-bottom: 2px solid #1a1a1a;
+    transition: all 0.2s ease;
+}
+
+.checkout-page .empty a:hover {
+    color: #000;
+    border-bottom-color: #000;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .checkout-page {
+        padding: 50px 30px;
+    }
+
+    .checkout-item {
+        grid-template-columns: 1.5fr 1fr 0.8fr 1fr;
+        padding: 20px 25px;
+        gap: 15px;
+    }
+
+    .checkout-item h3 {
+        font-size: 17px;
+    }
+
+    .checkout-item p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .checkout-page {
+        padding: 40px 20px;
+    }
+
+    .checkout-page h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .checkout-item {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 20px;
+    }
+
+    .checkout-item h3 {
+        font-size: 18px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .checkout-item p {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .checkout-item p::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #1a1a1a;
+    }
+
+    .checkout-summary {
+        max-width: 100%;
+        padding: 30px 25px;
+    }
+
+    .checkout-summary h3 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-page {
+        padding: 30px 15px;
+    }
+
+    .checkout-page h2 {
+        font-size: 28px;
+    }
+
+    .checkout-item {
+        padding: 18px 16px;
+    }
+
+    .checkout-item h3 {
+        font-size: 16px;
+    }
+
+    .checkout-item p {
+        font-size: 14px;
+    }
+
+    .checkout-summary {
+        padding: 25px 20px;
+    }
+
+    .checkout-summary h3 {
+        font-size: 24px;
+        margin-bottom: 25px;
+    }
+
+    .checkout-btn,
+    .checkout-summary button {
+        padding: 16px 32px;
+        font-size: 15px;
+    }
+
+    .shop-more {
+        padding: 12px 32px;
+        font-size: 15px;
+    }
+}
+
+/* Mobile data labels (for making it clear what each field is) */
+@media (max-width: 768px) {
+    .checkout-item p:nth-of-type(1)::before {
+        content: 'Price: ';
+    }
+    
+    .checkout-item p:nth-of-type(2)::before {
+        content: 'Quantity: ';
+    }
+    
+    .checkout-item p:nth-of-type(3)::before {
+        content: 'Subtotal: ';
+    }
+}

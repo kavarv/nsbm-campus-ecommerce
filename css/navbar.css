@@ -1,0 +1,161 @@
+/* MINIMAL ELEGANT NAVBAR - Clean & Professional */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    overflow-x: hidden;
+}
+
+/* Navbar container - Minimal and clean */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* Logo - Simple and elegant */
+.navbar .logo {
+    font-size: 22px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* Navigation links container */
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* User greeting */
+.navbar nav .user {
+    color: #666;
+    padding: 8px 16px;
+    margin-right: 8px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* Remove default link underlines globally for navbar */
+.navbar a,
+.navbar nav a {
+    text-decoration: none !important;
+}
+
+/* Navbar links - Clean minimal style */
+.navbar nav a {
+    color: #333 !important;
+    text-decoration: none !important;
+    padding: 10px 20px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.2s ease;
+    position: relative;
+    border-radius: 6px;
+}
+
+/* Subtle hover effect */
+.navbar nav a:hover {
+    color: #000;
+    background-color: #f5f5f5;
+}
+
+/* Active page indicator - Minimal underline */
+.navbar nav a.active {
+    color: #000;
+    font-weight: 600;
+}
+
+.navbar nav a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 8px;
+    left: 20px;
+    right: 20px;
+    height: 2px;
+    background-color: #1a1a1a;
+}
+
+/* Cart link special styling */
+.navbar nav a[href*="cart"] {
+    background-color: #1a1a1a !important;
+    color: #ffffff !important;
+}
+
+.navbar nav a[href*="cart"]:hover {
+    background-color: #000 !important;
+    color: #ffffff !important;
+}
+
+/* Responsive design */
+@media (max-width: 968px) {
+    .navbar {
+        padding: 18px 40px;
+    }
+
+    .navbar .logo {
+        font-size: 20px;
+    }
+
+    .navbar nav a {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+        gap: 16px;
+    }
+
+    .navbar nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .navbar nav a {
+        flex: 0 1 auto;
+    }
+
+    .navbar nav .user {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 16px;
+    }
+
+    .navbar .logo {
+        font-size: 18px;
+    }
+
+    .navbar nav a {
+        font-size: 13px;
+        padding: 8px 14px;
+    }
+}

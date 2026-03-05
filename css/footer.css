@@ -1,0 +1,226 @@
+/* MINIMAL ELEGANT FOOTER - Clean & Professional */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 50px 40px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    margin-top: 80px;
+}
+
+/* Footer links */
+.footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    display: inline-block;
+}
+
+.footer a:hover {
+    opacity: 0.7;
+}
+
+/* Footer columns */
+.footer .footer-columns {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer .footer-column {
+    min-width: 180px;
+    text-align: left;
+}
+
+.footer .footer-column h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.footer .footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer .footer-column ul li {
+    margin: 12px 0;
+}
+
+.footer .footer-column a {
+    color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+    font-weight: 400;
+}
+
+.footer .footer-column a:hover {
+    color: #fff;
+}
+
+/* Social media icons */
+.footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    margin: 0;
+}
+
+.footer .social-icons a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+}
+
+/* Copyright text */
+.footer .copyright,
+.footer > p {
+    margin-top: 30px;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Store info section */
+.footer .store-info {
+    margin-bottom: 30px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+}
+
+/* Newsletter signup */
+.footer .newsletter {
+    margin: 40px auto;
+    max-width: 500px;
+}
+
+.footer .newsletter h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer .newsletter input {
+    padding: 12px 18px;
+    border-radius: 4px 0 0 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    width: 65%;
+    font-size: 14px;
+}
+
+.footer .newsletter input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer .newsletter button {
+    padding: 12px 24px;
+    border-radius: 0 4px 4px 0;
+    border: none;
+    background: #fff;
+    color: #1a1a1a;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 35%;
+    font-size: 14px;
+}
+
+.footer .newsletter button:hover {
+    background: #f0f0f0;
+}
+
+/* Payment methods icons */
+.footer .payment-methods {
+    margin-top: 30px;
+    opacity: 0.6;
+}
+
+.footer .payment-methods img {
+    height: 28px;
+    margin: 0 8px;
+    filter: brightness(0) invert(1);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.footer .payment-methods img:hover {
+    opacity: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .footer {
+        padding: 50px 30px 30px;
+    }
+
+    .footer .footer-columns {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px 20px 30px;
+    }
+
+    .footer .footer-columns {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .footer .footer-column {
+        text-align: center;
+    }
+
+    .footer a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .footer .newsletter input,
+    .footer .newsletter button {
+        width: 100%;
+        border-radius: 4px;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 35px 15px 25px;
+        font-size: 13px;
+    }
+
+    .footer .social-icons a {
+        width: 36px;
+        height: 36px;
+    }
+
+    .footer .footer-column h3 {
+        font-size: 15px;
+    }
+}

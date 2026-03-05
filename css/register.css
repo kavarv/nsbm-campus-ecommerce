@@ -1,0 +1,192 @@
+/* MINIMAL ELEGANT REGISTER PAGE - Clean & Professional */
+/* This file uses the same styles as login.css for consistency */
+
+/* Page container */
+.register-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f5f1eb 0%, #fafafa 100%);
+}
+
+/* Heading */
+.register-page h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: -0.5px;
+}
+
+/* Form container - Clean card design */
+.register-form {
+    background: #ffffff;
+    padding: 50px 45px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 440px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.register-form:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Input fields - Clean minimal style */
+.register-form input[type=text], 
+.register-form input[type=email], 
+.register-form input[type=password] {
+    width: 100%;
+    padding: 14px 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    font-size: 15px;
+    color: #1a1a1a;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    transition: all 0.2s ease;
+}
+
+.register-form input::placeholder {
+    color: #999;
+}
+
+.register-form input:focus {
+    outline: none;
+    border-color: #1a1a1a;
+    background: #ffffff;
+}
+
+/* Autofill styling */
+.register-form input:-webkit-autofill,
+.register-form input:-webkit-autofill:hover,
+.register-form input:-webkit-autofill:focus {
+    -webkit-text-fill-color: #1a1a1a;
+    -webkit-box-shadow: 0 0 0px 1000px #fafafa inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Button - Clean and bold */
+.register-form .btn, 
+.register-form button[type=submit] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.register-form .btn:hover, 
+.register-form button[type=submit]:hover {
+    background: #000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.register-form .btn:active, 
+.register-form button[type=submit]:active {
+    transform: translateY(0);
+}
+
+/* Text and links */
+.register-form p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.register-form a {
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.register-form a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+/* Message (success or error) */
+.register-page .message {
+    margin-bottom: 20px;
+    padding: 14px 18px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    max-width: 440px;
+    width: 100%;
+}
+
+/* Success message with link */
+.register-page .message:has(a) {
+    color: #0a7e3e;
+    background: #e6f4ed;
+    border: 1px solid #b7e4ca;
+}
+
+.register-page .message:has(a) a {
+    color: #0a7e3e;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Error message (no link) */
+.register-page .message:not(:has(a)) {
+    color: #c41e3a;
+    background: #fee;
+    border: 1px solid #fcc;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .register-page h2 {
+        font-size: 32px;
+        margin-bottom: 30px;
+    }
+
+    .register-form {
+        padding: 40px 30px;
+        max-width: 400px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .register-page {
+        padding: 60px 15px;
+    }
+
+    .register-page h2 {
+        font-size: 28px;
+    }
+
+    .register-form {
+        padding: 35px 25px;
+    }
+
+    .register-form input[type=text], 
+    .register-form input[type=email], 
+    .register-form input[type=password] {
+        padding: 12px 14px;
+        font-size: 14px;
+    }
+
+    .register-form .btn, 
+    .register-form button[type=submit] {
+        padding: 14px;
+        font-size: 15px;
+    }
+}
